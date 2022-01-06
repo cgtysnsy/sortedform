@@ -1,0 +1,168 @@
+body {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: rgba(0, 203, 222, 0.1);
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #303030;
+  line-height: 1.5;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.048);
+}
+
+.main {
+  max-width: 540px;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.head {
+  line-height: 32px;
+  letter-spacing: -0.24px;
+  color: #0e3253;
+  font-size: 28px;
+  font-weight: 700;
+}
+.space {
+  border-bottom: 1px solid #d7d7d7;
+  margin-bottom: 2rem;
+}
+.row {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 1.25rem;
+  border: initial;
+  border-radius: calc(0.15rem - 1px);
+}
+form {
+  width: 100%;
+}
+.cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.cell-label {
+  max-width: 16%;
+  flex-basis: 16%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.cell-input {
+  display: block;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.small-text {
+  color: #909090;
+  margin-top: 0.25rem;
+}
+
+.mcell {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell-input-label {
+  position: absolute;
+  cursor: text;
+  font-size: 90%;
+  opacity: 1;
+  top: -0.4em;
+  left: 1.5rem;
+  z-index: 3;
+  line-height: 1;
+  padding: 0 1px;
+  background: white;
+}
+.cell-input-label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 6px;
+  top: 3px;
+  left: -0.2em;
+  right: -0.2em;
+  z-index: 0;
+}
+
+label {
+  display: inline-block;
+  cursor: default;
+  word-wrap: break-word;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 10px;
+}
+input {
+  border-radius: 0.1rem;
+  font-size: 0.8rem;
+  padding: 0.75rem;
+  line-height: 1.5;
+  border: 1px solid #d7d7d7;
+  background: #fff;
+  color: #303030;
+  height: auto;
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  box-sizing: border-box;
+  z-index: -2;
+}
+
+input:focus {
+  outline-color: #80bdff;
+}
+
+select {
+}
+
+.vatpen {
+  display: inline-block;
+  position: relative;
+  top: -31px;
+  left: 142px;
+  cursor: pointer;
+}
+
+.group {
+  position: relative;
+  display: inline-flex;
+}
+
+button {
+  color: #03b6e3;
+  border-color: #03b6e3;
+  background: white;
+  min-width: 70px;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  padding: 0.75rem 1.3rem 0.6rem;
+  box-shadow: none;
+  border-image-slice: 100%;
+  font-size: 0.8rem;
+  outline: initial;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+}

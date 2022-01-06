@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sorted form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="main">
+        <div>
+          <h1 class="head">Personal details</h1>
+        </div>
+        <div class="space"></div>
+        <div class="row">
+          <form action="">
+            <div class="cell">
+              <div class="cell-label">
+                <label class="label-fullname" for="fullname">Full Name</label>
+              </div>
+              <div class="cell-input">
+                <input
+                  type="text"
+                  placeholder="e.g. Max Mustermann"
+                  name="fullname"
+                  id="fullname"
+                  class="input-fullname"
+                />
+              </div>
+            </div>
+
+            <div class="cell">
+              <div class="cell-label">
+                <label for="businessname">Business Name</label>
+              </div>
+              <div class="cell-input">
+                <input
+                  type="text"
+                  placeholder="e.g.Mustermann Business"
+                  name="businessname"
+                  id="businessname"
+                />
+                <small class="small-text">
+                  Optional. Add if you are using a different name for your
+                  freelance business.
+                </small>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell-label">
+                <label for="Address">Address</label>
+                <label for="Address"></label>
+                <label for="Address"></label>
+              </div>
+              <div class="mcell">
+                <div class="cell-input">
+                  <label
+                    class="cell-input-label"
+                    style="
+                      flex: 0 0 83.33333%;
+                      flex-grow: 0;
+                      flex-shrink: 0;
+                      flex-basis: 76%;
+                      max-width: 76%;
+                    "
+                    >Street & Number</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="e.g. Rosa Luxemburg 28"
+                    name="address"
+                    id="address"
+                  />
+                </div>
+
+                <div
+                  class="cell-input"
+                  style="
+                    flex: 0 0 50%;
+                    flex-grow: 0;
+                    flex-shrink: 0;
+                    flex-basis: 50%;
+                    max-width: 50%;
+                  "
+                >
+                  <label class="cell-input-label">City</label>
+                  <input
+                    type="text"
+                    placeholder="e.g. Berlin"
+                    name="address"
+                    id="address"
+                  />
+                </div>
+
+                <div
+                  class="cell-input"
+                  style="
+                    flex: 0 0 33.33333%;
+                    flex-grow: 0;
+                    flex-shrink: 0;
+                    flex-basis: 33.3333%;
+                    max-width: 33.33333%;
+                  "
+                >
+                  <label class="cell-input-label">Zip Code</label>
+                  <input
+                    type="text"
+                    placeholder="e.g. 12345"
+                    name="address"
+                    id="address"
+                  />
+                </div>
+                <div
+                  class="cell-input"
+                  style="
+                    flex: 0 0 41.66667%;
+                    flex-grow: 0;
+                    flex-shrink: 0;
+                    flex-basis: 41.6667%;
+                    max-width: 41.66667%;
+                  "
+                >
+                  <label class="cell-input-label">Country</label>
+                  <input
+                    type="text"
+                    placeholder="Germany"
+                    name="address"
+                    id="address"
+                    style="background-color: #e9ecef; opacity: 1"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="cell">
+              <div class="cell-label">
+                <label for="tax"> Tax registration</label>
+              </div>
+              <div class="cell-input">
+                <label class="cell-input-label">State registered in</label>
+                <select class="cell-input" name="tax" id="tax">
+                  Selected
+                  <option selected disabled>Select...</option>
+                  <option value="x">x</option>
+                  <option value="s">s</option>
+                  <option value="a">a</option>
+                </select>
+              </div>
+              <div class="cell-input">
+                <label for="" class="cell-input-label">Tax number</label>
+                <input
+                  type="text"
+                  type="text"
+                  placeholder="e.g. 12/345/67890"
+                  name="taxnumber"
+                  id="taxnumber"
+                  style="background-color: #e9ecef; opacity: 1"
+                />
+                <small class="small-text"
+                  >Your self employed
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary undefined"
+                    href="http://help.getsorted.de/en/articles/5016918"
+                    >tax number (Steuernummer)</a
+                  >. Learn more on
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary undefined"
+                    href="http://help.getsorted.de/en/articles/5076450"
+                    >how to find it</a
+                  >
+                </small>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell-label">
+                <label for="vatreport">VAT reporting</label>
+              </div>
+              <div class="cell-input">
+                <input
+                  type="text"
+                  placeholder="Set up VAT reporting"
+                  name="vatreport"
+                  id="vatreport"
+                  readonly
+                />
+                <div>
+                  <a href="">
+                    <span class="vatpen"
+                      ><svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        class="ml-2"
+                        style="color: #03b6e3"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12 1L15 4L5 14L1 15L2 11L12 1Z"
+                          stroke="currentColor"
+                          stroke-width="1.4"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path></svg></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell-label">
+                <label for="vat">VAT number </label>
+              </div>
+              <div class="cell-input">
+                <input
+                  type="text"
+                  placeholder="e.g. DE123456789"
+                  name="vat"
+                  id="vat"
+                />
+                <small class="small-text"
+                  >Optional.
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary undefined"
+                    href="http://help.getsorted.de/en/articles/5016918"
+                    >VAT number</a
+                  >
+                  is needed only if you invoice customers outside of Germany.
+                  Learn more on
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary undefined"
+                    href="http://help.getsorted.de/en/articles/5102653"
+                    >how to find it</a
+                  ></small
+                >
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell-label">
+                <label for="profession">Profession </label>
+              </div>
+              <div class="cell-input">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    margin-bottom: 0.5rem;
+                  "
+                >
+                  <label for=""></label>
+                  <label class="small-text">0/25</label>
+                </div>
+                <input
+                  type="text"
+                  placeholder="e.g. Softwareentwickler"
+                  name="profession"
+                  id="profession"
+                />
+                <small class="small-text"
+                  >Profession should be in German.
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary undefined"
+                    href="http://help.getsorted.de/en/articles/3781190-setting-up-your-profession"
+                    >Help me find my profession title</a
+                  ></small
+                >
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell-label">
+                <label>Legal Type</label>
+              </div>
+              <div
+                class="cell-input"
+                style="display: flex; flex-direction: column"
+              >
+                <select>
+                  <option selected disabled>Select...</option>
+                  <option value="sole trader">Sole trader</option>
+                  <option value="freelancer">Freelancer</option>
+                  <option value="other">Other freelance activity</option>
+                  <option value="none">None of these option</option>
+                </select>
+                <small class="small-text"
+                  ><a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary undefined"
+                    href="http://help.getsorted.de/en/articles/3782735-order-into-chaos-legal-structure-for-self-employment-freiberufler-einzelunternehmer-and-others"
+                    >Help me find my legal type</a
+                  ></small
+                >
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell-label">
+                <label for="">Self-employed since</label>
+              </div>
+              <div role="group" class="group">
+                <button type="button">Before 2019</button>
+                <button type="button" style="border-left: none">
+                  2019 or later
+                </button>
+              </div>
+            </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" name="nolonger" />
+              </div>
+              <label for="nolonger"
+                >I am no longer self-employed and de-registered with the
+                Finanzamt</label
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
